@@ -14,9 +14,9 @@ public class test {
         Properties props = new Properties();
         props.put("StrictHostKeyChecking", "no");
 
-        String host="192.168.0.1";
-        String user ="root";
-        String pwd = "csav168";
+        String host="";
+        String user ="";
+        String pwd = "";
         int port = 22;
 
         JSch jsch=new JSch();
