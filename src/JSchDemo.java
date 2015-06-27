@@ -10,10 +10,10 @@ import java.io.InputStreamReader;
 import java.nio.charset.Charset;
 
 public class JSchDemo {
-    private String charset ="UTF-8"; // ?¸m??®æ¦¡
-    private String user; // ¥Î?¦W
-    private String passwd; // µn?±K?
-    private String host; // ¥DÉóIP
+    private String charset ="UTF-8"; // ?ï¿½m??ï¿½æ¦¡
+    private String user; // ï¿½ï¿½?ï¿½W
+    private String passwd; // ï¿½n?ï¿½K?
+    private String host; // ï¿½Dï¿½ï¿½IP
     private JSch jsch;
     private Session session;
 
@@ -25,7 +25,7 @@ public class JSchDemo {
     }
 
     /**
-     * ?±µ¨ì«ü©wªºIP
+     * ?ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½wï¿½ï¿½IP
      *
      * @throws JSchException
      */
@@ -40,7 +40,7 @@ public class JSchDemo {
     }
 
     /**
-     * ?¦æ¬Û?ªº©R¥O
+     * ?ï¿½ï¿½ï¿½?ï¿½ï¿½ï¿½Rï¿½O
      */
     public void execCmd() {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -81,9 +81,9 @@ public class JSchDemo {
     }
 
     public static void main(String[] args) throws Exception {
-        String user ="root";
-        String passwd ="csav168";
-        String host ="192.168.0.1";
+        String user ="";
+        String passwd ="";
+        String host ="";
 
         JSchDemo demo = new JSchDemo(user, passwd, host);
         demo.connect();
